@@ -1,0 +1,12 @@
+[package]
+name = "aoc-25"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "aoc_25"
+path = "src/lib.rs"
+
+[dependencies]
+paste = "1.0.15"
+regex = "1.12.2"
