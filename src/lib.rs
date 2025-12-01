@@ -59,7 +59,7 @@ mod tests {
     #[test]
     fn extract_template_2() {
         let (i, f, s) = <(i32, f32, String)>::extract(
-            r"integer:\s*?(\d+)\s*?float:\s*?(\d+\.\d+)string:([a-zA-Z]+)",
+            &(r"integer:\s*?(\d+)\s*?float:\s*?(\d+\.\d+)string:([a-zA-Z]+)".try_into().unwrap()),
             "integer:33    float:   100.001string:abcd",
         );
         assert_eq!(i, 33);
